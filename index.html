@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Dyal · Projects</title>
+    <meta name="description" content="Small web tools hosted on GitHub Pages." />
+    <style>
+      :root {
+        --bg: #f6f7f9;
+        --card: #ffffff;
+        --border: #dcdfe4;
+        --text: #1b1f24;
+        --dim: #5b6470;
+        --accent: #1f6feb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1216;
+          --card: #171b21;
+          --border: #2a313a;
+          --text: #e6e9ee;
+          --dim: #9aa4b2;
+          --accent: #58a6ff;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 16px 64px;
+      }
+      h1 {
+        margin: 0 0 4px;
+        font-size: 28px;
+      }
+      .lede {
+        margin: 0 0 32px;
+        color: var(--dim);
+      }
+      ul {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+      }
+      li a.site {
+        display: block;
+        padding: 16px 18px 6px;
+        color: inherit;
+        text-decoration: none;
+      }
+      li a.site:hover h2,
+      li a.site:focus-visible h2 {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+      h2 {
+        margin: 0 0 2px;
+        font-size: 18px;
+      }
+      p {
+        margin: 0;
+        color: var(--dim);
+      }
+      .meta {
+        padding: 0 18px 14px;
+        font-size: 14px;
+      }
+      .meta a {
+        color: var(--accent);
+      }
+      footer {
+        margin-top: 40px;
+        color: var(--dim);
+        font-size: 14px;
+      }
+      footer a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Projects</h1>
+      <p class="lede">Small web tools that run in the browser. Nothing to install.</p>
+      <ul>
+        <li>
+          <a class="site" href="harness-designer/">
+            <h2>Harness Designer</h2>
+            <p>Draw automotive wiring harnesses the way the workshop expects them: formboard drawings, cavity tables, checks and wire lists.</p>
+          </a>
+          <div class="meta"><a href="https://github.com/jtdyal/harness-designer">Source on GitHub</a></div>
+        </li>
+        <li>
+          <a class="site" href="fluffy-system/">
+            <h2>Supercharger Boost Calculator</h2>
+            <p>Boost, pressure ratio and airflow from engine size, supercharger size and pulley. Built for a phone.</p>
+          </a>
+          <div class="meta"><a href="https://github.com/jtdyal/fluffy-system">Source on GitHub</a></div>
+        </li>
+        <li>
+          <a class="site" href="Beam-Fix/">
+            <h2>Beam-Fix</h2>
+            <p>See how a notch in a glulam header changes its sag, and how much steel side plates win back. An exploration tool only, not engineering advice.</p>
+          </a>
+          <div class="meta"><a href="https://github.com/jtdyal/Beam-Fix">Source on GitHub</a></div>
+        </li>
+      </ul>
+      <footer>
+        More on <a href="https://github.com/jtdyal">GitHub</a>.
+      </footer>
+    </main>
+  </body>
+</html>
